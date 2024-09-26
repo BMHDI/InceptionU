@@ -9,13 +9,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background-image: url('https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=740&t=st=1727203102~exp=1727203702~hmac=28f9dced3d2fdca8538c86fa58edf963051b614bdb57814b2b805a3cb18bf965');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
 }
+
 .container {
     padding: 25px 50px;
     max-width: fit-content;
@@ -27,19 +28,37 @@ body {
     -webkit-backdrop-filter: blur(30px);
     border-radius: 10px;
     border: 2px solid rgba(133, 128, 128, 0.18);
-    transition: transform 0.3s, box-shadow 0.9s;
-    animation: boxShadowColor 5s infinite alternate;
+    transition: transform 2s, box-shadow 0.9s, ;
+    animation: boxShadowColor 9s infinite alternate;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    perspective: 600px; 
+    
+    
 }
 
 @keyframes boxShadowColor {
     0% {
-        box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.322); 
+        box-shadow: 0 8px 32px 0 rgba(255, 0, 0, 0.322);
+        transform: rotateX(10deg) rotateY(-10deg) rotateZ(-1deg);
+    
     }
-    50% { 
-        box-shadow: 0 8px 32px 0 rgba(0, 255, 0, 0.322); 
+    25%{
+        transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+        
     }
+
+    50% {
+        box-shadow: 0 8px 32px 0 rgba(0, 255, 0, 0.322);
+        transform: rotateX(-10deg) rotateY(10deg) rotateZ(1deg);
+    }
+    75%{
+        transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+        
+    }
+
     100% {
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 255, 0.322); 
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 255, 0.322);
+        transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
     }
 }
 
@@ -84,7 +103,7 @@ header p {
     background-color: #000000;
     color: rgb(255, 251, 5);
     box-shadow: #f8f4004f 0px 0px 15px;
-    fill:rgb(255, 251, 5)
+    fill: rgb(255, 251, 5)
 }
 
 footer {
@@ -96,26 +115,39 @@ footer {
 
 .profile-picture {
     border-radius: 60px;
-    margin: 10px;;
+    margin: 10px;
+    ;
     height: 120px;
     transition: 1s;
-   
+
 }
-.profile-picture:hover{
+
+.profile-picture:hover {
     transform: scale(1.05);
     
     border-radius: 10px;
-   
+
 }
-.container:hover{
+
+
+
+
+
+.container:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 60px 0 rgba(229, 255, 0, 0.37);
     animation: alternate;
+ 
+    
+
+
+
 
 }
+
 svg {
     width: 50px;
     display: inline;
-    
-   
+
+
 }
