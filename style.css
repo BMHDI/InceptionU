@@ -31,7 +31,7 @@ body {
     transition: transform 2s, box-shadow 0.9s, ;
     animation: boxShadowColor 9s infinite alternate;
     transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    perspective: 600px; 
+    
     
     
 }
@@ -44,14 +44,15 @@ body {
     }
     25%{
         transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
-        
+        box-shadow: 0 8px 32px 0 rgba(238, 255, 0, 0.384);
     }
 
     50% {
-        box-shadow: 0 8px 32px 0 rgba(0, 255, 0, 0.322);
+        box-shadow: 0 8px 32px 0 rgba(0, 255, 0, 0.384);
         transform: rotateX(-10deg) rotateY(10deg) rotateZ(1deg);
     }
     75%{
+        box-shadow: 0 8px 32px 0 rgba(3, 238, 255, 0.384);
         transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
         
     }
@@ -103,7 +104,7 @@ header p {
 .link:hover {
     background-color: #000000;
     color: rgb(255, 251, 5);
-    box-shadow: #f8f4004f 0px 0px 15px;
+    box-shadow: #f8f40049 0px 0px 15px;
     fill: rgb(255, 251, 5)
 }
 
@@ -170,7 +171,7 @@ svg {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 form {
@@ -180,16 +181,16 @@ form {
 
 label {
     color: #ffffff;
-    
+    margin-bottom: 4px;
     font-weight: bold;
     font-size: smaller;
 }
 
 input {
     margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+    padding: 5px;
+  
+    border-radius: 8px;
     font-size: 12px;
     background-color: #0000002c;
     color: #ffffff;
